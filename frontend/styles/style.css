@@ -1,0 +1,63 @@
+:root {
+  --main-color: #0a2656;
+  --second-color: #049ce4;
+  --block-color: #02c9af;
+  --border-color: #011034;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #fff;
+}
+
+header,
+footer {
+  background-color: var(--second-color);
+}
+
+.block {
+  width: 100%;
+  background-color: var(--block-color);
+}
+
+.block-large {
+  width: 100%;
+  min-height: 65vh;
+  background-color: var(--block-color);
+}
+
+#input-text {
+  width: 60%;
+  min-width: 350px;
+  height: 40px;
+  background-color: var(--block-color);
+}
+
+#input-submit {
+  width: 150px;
+  height: 40px;
+  background-color: var(--second-color);
+  transition: 0.2s;
+}
+
+#input-submit:hover {
+  background-color: var(--block-color);
+  color: var(--border-color) !important;
+}
