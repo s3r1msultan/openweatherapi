@@ -18,7 +18,7 @@ weatherRoute.post("/weather", async (req, res) => {
     const city = req.body.city;
     const weatherData = await getWeatherData(city);
     if (weatherData.code === "404") {
-      weatherData = await weatherAPIController.getWeatherData("Astana");
+      weatherData = await getWeatherData("Astana");
       res.render("weather", {
         weatherData,
         city: "Astana (An invalid city name has been entered)",
